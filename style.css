@@ -162,3 +162,23 @@ button{
   background-color: rgb(240, 141, 141);
   cursor: pointer;
 }
+
+.vitamin {
+  border: 1px solid rgb(124, 124, 124);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: #999999 5px 5px 10px;
+  width: 150px;
+  min-height: 300px;
+  text-align: center;
+}
+
+.vitamin h3 {
+  font-size: 24px;
+}
+
+.vitamin img{
+  width: 50px;
+  height: 50px;
+}
