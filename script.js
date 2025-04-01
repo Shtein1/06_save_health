@@ -87,7 +87,7 @@ function getRandomInt(max) {
       {
         id:"001",
         title:"Аевіт",
-        photo:"img/vitamins/free-icon-a-3554188.png",
+        photo:"vitamins (2).png",
         description:"Aevit is a vitamin complex with A and E for skin, hair, and immunity.",
         rating:2,
         type:"crystalline"
@@ -103,7 +103,7 @@ function getRandomInt(max) {
       {
         id:"003",
         title:"Вітамін D",
-        photo:"",
+        photo:"vitamins (1).png",
         description:"Vitamin D strengthens bones, immunity, and supports overall health.",
         rating:3,
         type:"Powdery"
@@ -111,7 +111,7 @@ function getRandomInt(max) {
       {
         id:"004",
         title:"Вітамін B3",
-        photo:"",
+        photo:"vitamin-d.png",
         description:"Vitamin B3 (niacin) supports metabolism, skin health, and the nervous system.",
         rating:1,
         type:"Powdery"
@@ -119,7 +119,7 @@ function getRandomInt(max) {
       {
         id:"005",
         title:"Омега-3",
-        photo:"",
+        photo:"fish-pills.png",
         description:"Omega-3 supports the heart, brain, and reduces inflammation.",
         rating:4,
         type:"capsules"
@@ -127,7 +127,7 @@ function getRandomInt(max) {
       {
         id:"006",
         title:"Magneum",
-        photo:"",
+        photo:"iron.png",
         description:"Magnesium supports nerves, muscles, and heart health.",
         rating:5,
         type:"Powdery"
@@ -146,7 +146,7 @@ function getRandomInt(max) {
               <p>${item.id}</p>
               <h3>${item.title}</h3>
               <hr>
-              <img src="img/vitamins/${item.img}" alt="">
+              <img src="img/vitamins/${item.photo}" alt="">
               <p>${item.description}</p>
               <p>${"❤️". repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
               <p>${item.type}</p>
