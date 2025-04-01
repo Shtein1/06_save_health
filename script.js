@@ -83,71 +83,76 @@ function getRandomInt(max) {
     }
     
           
-          const arrayOfObjects = [
-            {
-              id: 1,
-              title: "Аевіт",
-              photo: "",
-              description: "",
-              rating: 4,
-              type: ""
-            },
-            {
-              id: 2,
-              title: "Вітамін E",
-              photo: "",
-              description: "",
-              rating: 3,
-              type: ""
-            },
-            {
-              id: 3,
-              title: "Вітамін D",
-              photo: "",
-              description: "",
-              rating: 5,
-              type: ""
-            },
-            {
-              id: 4,
-              title: "Вітамін B3",
-              photo: "",
-              description: "",
-              rating: 5,
-              type: ""
-            },
-            {
-              id: 5,
-              title: "Омега-3",
-              photo: "",
-              description: "",
-              rating: 5,
-              type: ""
-            },
-            {
-              id: 6,
-              title: "Magnium-B6",
-              photo: "",
-              description: "",
-              rating: 3,
-              type: ""
-            },
-            
-          ];
+    const arrayOfVitamins = [
+      {
+        id:"001",
+        title:"Аевіт",
+        photo:"img/vitamins/free-icon-a-3554188.png",
+        description:"Aevit is a vitamin complex with A and E for skin, hair, and immunity.",
+        rating:2,
+        type:"crystalline"
+      },
+      {
+        id:"002",
+        title:"Вітімін С",
+        photo:"vitamins.png",
+        description:"Vitamin C boosts immunity, improves skin, and acts as an antioxidant.",
+        rating:4,
+        type:"Powdery"
+      },
+      {
+        id:"003",
+        title:"Вітамін D",
+        photo:"",
+        description:"Vitamin D strengthens bones, immunity, and supports overall health.",
+        rating:3,
+        type:"Powdery"
+      },
+      {
+        id:"004",
+        title:"Вітамін B3",
+        photo:"",
+        description:"Vitamin B3 (niacin) supports metabolism, skin health, and the nervous system.",
+        rating:1,
+        type:"Powdery"
+      },
+      {
+        id:"005",
+        title:"Омега-3",
+        photo:"",
+        description:"Omega-3 supports the heart, brain, and reduces inflammation.",
+        rating:4,
+        type:"capsules"
+      },
+      {
+        id:"006",
+        title:"Magneum",
+        photo:"",
+        description:"Magnesium supports nerves, muscles, and heart health.",
+        rating:5,
+        type:"Powdery"
+      }
+    ]
 
-//console.log(arrayOfVitamins)
+    console.log(arrayOfVitamins)
 
-arrayOfVitamins.forEach((item => {
-  let divVitamin = document.createElement('div')
-  divVitamin.classList.add('vitamin')
-  document.getElementById("p-vitamins").appendChild(divVitamin)
-  divVitamin.innerHTML = `
-      <h3>${item.title}</h3>
-      <hr>
-      <img src="img/vitamins/vitamin-a.png" alt="">
-      <p>${item.description}</p>
-      <span>${'❤'.repeat(item.rating) + '♡'.repeat(5 - item.rating)}</span>
-      <p>type</p>
-      <span>id</span>
-  `
-})
+    arrayOfVitamins.forEach((item,index) =>{
+      //console.log("елемент №",index.item)
+
+      let divVitamin = document.createElement('div')
+      //divVitamin.innerText = item.title 
+      
+      divVitamin.innerHTML = `
+              <p>${item.id}</p>
+              <h3>${item.title}</h3>
+              <hr>
+              <img src="img/vitamins/${item.img}" alt="">
+              <p>${item.description}</p>
+              <p>${"❤️". repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
+              <p>${item.type}</p>
+              </div>
+              `
+      divVitamin.classList.add('vitamin')
+
+      document.getElementById("p-vitamins").appendChild(divVitamin)
+    })

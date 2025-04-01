@@ -163,22 +163,56 @@ button{
   cursor: pointer;
 }
 
-.vitamin {
-  border: 1px solid rgb(124, 124, 124);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: #999999 5px 5px 10px;
-  width: 150px;
-  min-height: 300px;
-  text-align: center;
+#p-vitamins {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.vitamin h3 {
+.vitamin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:1px solid gray;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: #999999 5px 5px 10px;
+   width: 150px;
+   min-height: 300px;
+   text-align: center;
+}
+
+.vitamin h3{
   font-size: 24px;
 }
 
 .vitamin img{
   width: 50px;
   height: 50px;
+}
+
+.vitamin div>p:first-child{
+  text-align: center;
+}
+
+.vitamin div>img{
+  width: 100%;
+  height: auto;
+}
+
+.vitamin div{
+  margin-top: auto;
+  width: 80%;
+}
+
+.vitamin p:last-child{
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid#999999;
+  border-bottom: 1px solid #999999;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #cccccc;
+  font-size: 14px;
 }
