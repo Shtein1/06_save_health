@@ -1,0 +1,51 @@
+[
+    {
+      "id": "001",
+      "title": "Aevit",
+      "photo": "vitamins (2).png",
+      "description": "Aevit is a vitamin complex with A and E for skin, hair, and immunity.",
+      "rating": 2,
+      "type": "crystalline"
+    },
+    {
+      "id": "002",
+      "title": "Vitamin C",
+      "photo": "vitamins.png",
+      "description": "Vitamin C boosts immunity, improves skin, and acts as an antioxidant.",
+      "rating": 4,
+      "type": "Powdery"
+    },
+    {
+      "id": "003",
+      "title": "Vitamin D",
+      "photo": "vitamins (1).png",
+      "description": "Vitamin D strengthens bones, immunity, and supports overall health.",
+      "rating": 3,
+      "type": "Powdery"
+    },
+    {
+      "id": "004",
+      "title": "Vitamin B3",
+      "photo": "vitamin-d.png",
+      "description": "Vitamin B3 (niacin) supports metabolism, skin health, and the nervous system.",
+      "rating": 1,
+      "type": "Powdery"
+    },
+    {
+      "id": "005",
+      "title": "Omega-3",
+      "photo": "fish-pills.png",
+      "description": "Omega-3 supports the heart, brain, and reduces inflammation.",
+      "rating": 4,
+      "type": "capsules"
+    },
+    {
+      "id": "006",
+      "title": "Magnesium",
+      "photo": "iron.png",
+      "description": "Magnesium supports nerves, muscles, and heart health.",
+      "rating": 5,
+      "type": "Powdery"
+    }
+  ]
+  
