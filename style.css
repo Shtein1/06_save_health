@@ -184,6 +184,25 @@ button{
    text-align: center;
 }
 
+/*hover*/
+.vitamin:hover p:first-child{
+  color:#f08d8d;
+}
+
+/*all*/
+.vitamin p{
+  color:#000000;
+  text-align: justify;
+
+}
+
+/*id*/
+.vitamin p:first-child{
+  align-self: flex-end;
+  font-size: 10px;
+  color:#000000;
+}
+
 .vitamin h3{
   font-size: 24px;
 }

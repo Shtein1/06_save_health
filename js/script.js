@@ -96,12 +96,12 @@ fetch("js/vitamins.json")
                 <p>${item.id}</p>
                 <h3>${item.title}</h3>
                 <hr>
-                <img src="img/vitamins/${item.photo}" alt="">
+                <img src="img/vitamins/${item.photo}" alt="Картинка для ${item.title}"onerror="this.onerror = null; this.scr='img/vitamins (1).png';">
                 <p>${item.description}</p>
 
                 <div>
                 <img src="img/vitamins/${item.schema}" alt="">
-                <p>${"💚". repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
+                <p>${"❤️". repeat(item.rating)+'🤍'.repeat(5-item.rating)}</p>
                 <p>${item.type}</p>
                 </div>
                 `
